@@ -1,0 +1,133 @@
+<html>
+<head><title>SOS MCDS</title></head>
+<body>
+
+  <img src="./images/sos_logo.png" width="109" height="56">
+
+  <h1>SOS - Marketing Customer Database System (MCDS)</h1>
+
+  <h3>Phase 1 - Demo - I'm lovin' it!</h3>
+
+  <hr/>
+
+  <h2>Company name query</h2>
+
+  <p>Company Name (just part of the name is required, we'll figure out the rest):</p> 
+
+  <form action="http://127.0.0.1:80/cgi-bin/query.py" method="get">
+    <input type="text" name="company_name"><br />
+    <input type="submit" value="Serve it!" />
+  </form>
+
+  <hr/>
+
+  <h2>Category query</h2>
+
+  <table border="1">
+
+    <tr>
+      <td><a href="./cgi-bin/query.py?type=cat&value=AGENT">Agent (AGENT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=CRANE">Crane (CRANE)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=DO">Drilling Op (DO)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=DC">Drilling Contractor (DC)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=IND">Industrial (IND)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=LG">Logistic (LG)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=MS">Machine Shop (MS)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=MNF">Manufacture (MNF)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=MR">Marine (MR)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=MG">Mining (MG)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=NDT">Non Destructive Testing (NDT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=FAB">Fabrication (FAB)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=SCF">Scaffolding (SCF)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=SERVICE">Service (SERVICE)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=NDT">Contractor(CTT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=cat&value=FUTURE">Future use</a></td>
+    </tr>
+
+  </table>
+
+
+  <hr/>
+
+  <h2>Location query</h2>
+
+  <table border="1">
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=AYA">Ayutthaya (AYA)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=BKK">Bangkok (BKK)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=BRM">Buriram (BRM)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=CBI">Chonburi (CBI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=CCO">Chachoengsao (CCO)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=CMI">Chiang Mai (CMI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=CPN">Chumporn (CPN)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=KK">Khon Kaen (KK)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=KPT">Kampangphet (KPT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=KT">Korat (KT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=LCB">Laem Cha Bang (LCB)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=LKB">Lat Krabang (LKB)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=MTP">Maptaphut (MPT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=NAK">Nakhon Ratchasima (NAK)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=NBI">Nontaburi (NBI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=NPT">Nakorn Pathom (NPT)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=NSN">Nakorn Sawan (NSN)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PBI">Phetchaburi (PBI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PKN">Prachuapkitikhan (PKN)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PKT">Phuket (PKT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PRI">Prachinburi (PRI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PSN">Pitsanulok (PSN)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=PTE">Pathumthani (PTE)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=RBR">Ratchaburi (RBR)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=RNG">Ranong (RNG)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=ROI">Roi-Et (ROI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=RYG">Rayong (RYG)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=SKL">Songkhla (SKL)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=SKN">Samut Sakorn (SKN)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=SPK">Samut Parkan (SPK)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=SRI">Saraburi (SRI)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=STP">Sattahip (STP)</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=UDON">Udon Thani (UDON)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=UPT">Ban Chang (UPT)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+      <td><a href="http://127.0.0.1:80/cgi-bin/query.py?type=loc&value=XXX">XXX (XXX)</a></td>
+    </tr>
+
+  </table>
+
+  <hr/>
+
+  <h2>Service query</h2>
+
+  <p><a href="http://127.0.0.1:80/cgi-bin/query.py?type=service&value=NDT">NDT Inspection</a></p>
+  <p><a href="http://127.0.0.1:80/cgi-bin/query.py?type=service&value=XYZ">Blah servoce</a></p>
+
+  <hr/>
+
+  <h2>BigMac query</h2>
+
+  <img src="./images/sos_big_mac.png" height="243" width="350">
+
+  <p><a href="http://127.0.0.1:80/cgi-bin/query.py?type=BIGMAC">Get me everything!</a></p>
+
+  <hr/>
+
+  <h4>(c) 2016 Tony Bedford, Old Spice Productions Ltd.</h4>
+</body>
+</html>
